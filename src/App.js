@@ -25,17 +25,17 @@ export default function App() {
     return flag;
   }
   function clickEventHandler() {
-    if (number === "" || number < 0) setResult("Please enter valid input");
+    if (number === "" || number < 0) setResult("Please enter valid input 😒");
     else {
       var flag = isPrime(Number(number));
       if (flag === 1) {
-        setResult(number + " is neither prime nor composite");
+        setResult(number + " is neither prime nor composite 🥴");
       }
       if (flag === 2) {
-        setResult(number + " is a prime number");
+        setResult(number + " is a prime number 🥳");
       }
       if (flag === 3) {
-        setResult(number + " is not a prime number");
+        setResult(number + " is not a prime number 🥴");
       }
     }
   }
